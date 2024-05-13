@@ -29,13 +29,13 @@
             <key>metadata</key>
             <dict>
                 <key>bundle-identifier</key>
-                <string>com.eConsent.rchsp</string>
+                <string>com.rchsp.eConsentStg</string><!-- bundle-id(app-id) -->
                 <key>bundle-version</key>
-                <string>1.0.0</string>
+                <string>2.0.2</string><!-- app 버전 정보 -->
                 <key>kind</key>
                 <string>software</string>
                 <key>title</key>
-                <string>eConsent-RCHSP</string>
+                <string>eConsent-RCHSP</string><!-- product name(target name) -->
             </dict>
         </dict>
     </array>
