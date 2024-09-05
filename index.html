@@ -1,28 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>App Download</title>
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Download</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="w3.css">
 </head>
 <body>
-    <h1>Download eConsent-RCHSP-DEV</h1>
-    <p>Click the link below to install our app.</p>
-    <a href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/mjh2550/appdown/master/eConsent-Development.plist">Install DEV App</a>
-    <h1>Download eConsent-RCHSP-STG</h1>
-    <p>Click the link below to install our app.</p>
-    <a href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/mjh2550/appdown/master/eConsent-Staging.plist">Install STG App</a>
-    <h1>Download eConsent-RCHSP-PROD</h1>
-    <p>Click the link below to install our app.</p>
-    <a href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/mjh2550/appdown/master/eConsent.plist">Install PROD App</a>
-    </br>
-    <h1>Download ezCONSENT-PPM(ANDROID)</h1>
-    <p>ezCONSENT-Android-PPM-v1.0@1.apk</p>
-    <a href="https://raw.githubusercontent.com/mjh2550/appdown/master/ezCONSENT-Android-PPM-v1.0@1.apk">Install App</a>
-    <h1>Download ezCONSENT-PPM(IOS)</h1>
-    <p>ezCONSNET-PPM.ipa</p>
-    <a href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/mjh2550/appdown/master/ezCONSENT-PPM.plist">Install App</a>
-    <h1>Download ezCONSENT-AMG-DEV(ANDROID)</h1>
-    <p>ezCONSENT-Android-AMG-development-v1.0.0@1.apk</p>
-    <a href="https://raw.githubusercontent.com/mjh2550/appdown/master/ezCONSENT-Android-AMG-development-v1.0.0@1.apk">Install App</a>
+    <div class="w3-center">
+        <h1>다운로드 안내</h1>
+    </div>
+
+    <ul class="w3-ul">
+        <li class="w3-center"><button class="w3-button w3-blue" onclick="doDownloadDev();">모바일 전자동의서 안드로이드 다운로드</button></li>
+        <li class="w3-center"><button class="w3-button w3-blue" onclick="doDownloadStg();">모바일 전자동의서 IOS 다운로드</button></li>
+        <!--<li class="w3-center"><button class="w3-button w3-blue" onclick="doDownloadProd();">모바일 전자동의서 운영기 다운로드</button></li>-->
+    </ul>
+
+    <script>
+        function doDownloadDev() {
+            location.href = "itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/mjh2550/appdown/master/eConsent.plist";
+        }
+        function doDownloadStg() {
+            location.href = "itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/mjh2550/appdown/master/eConsent.plist";
+        }
+        function doDownloadProd() {
+            location.href = "eConsent_Real-release.apk";
+        }
+    </script>
 </body>
 </html>
